@@ -1,0 +1,190 @@
+            <tr>
+              <td>A</td>
+              <td><input type="checkbox" className='seats' value={"A1"}/></td>
+              <td><input type="checkbox" className='seats' value={"A2"}/></td>
+              <td><input type="checkbox" className='seats' value={"A3"}/></td>
+              <td><input type="checkbox" className='seats' value={"A4"}/></td>
+              <td><input type="checkbox" className='seats' value={"A5"}/></td>
+              <td><input type="checkbox" className='seats' value={"A6"}/></td>
+              <td><input type="checkbox" className='seats' value={"A7"}/></td>
+              <td><input type="checkbox" className='seats' value={"A8"}/></td>
+              <td><input type="checkbox" className='seats' value={"A9"}/></td>
+              <td><input type="checkbox" className='seats' value={"A10"}/></td>
+              <td><input type="checkbox" className='seats' value={"A11"}/></td>
+              <td><input type="checkbox" className='seats' value={"A12"}/></td>
+            </tr>
+            <tr>
+              <td>B</td>
+              <td><input type="checkbox" className='seats' value={"B1"}/></td>
+              <td><input type="checkbox" className='seats' value={"B2"}/></td>
+              <td><input type="checkbox" className='seats' value={"B3"}/></td>
+              <td><input type="checkbox" className='seats' value={"B4"}/></td>
+              <td><input type="checkbox" className='seats' value={"B5"}/></td>
+              <td><input type="checkbox" className='seats' value={"B6"}/></td>
+              <td><input type="checkbox" className='seats' value={"B7"}/></td>
+              <td><input type="checkbox" className='seats' value={"B8"}/></td>
+              <td><input type="checkbox" className='seats' value={"B9"}/></td>
+              <td><input type="checkbox" className='seats' value={"B10"}/></td>
+              <td><input type="checkbox" className='seats' value={"B11"}/></td>
+              <td><input type="checkbox" className='seats' value={"B12"}/></td>
+            </tr>
+            <tr>
+              <td>C</td>
+              <td><input type="checkbox" className='seats' value={"C1"}/></td>
+              <td><input type="checkbox" className='seats' value={"C2"}/></td>
+              <td><input type="checkbox" className='seats' value={"C3"}/></td>
+              <td><input type="checkbox" className='seats' value={"C4"}/></td>
+              <td><input type="checkbox" className='seats' value={"C5"}/></td>
+              <td><input type="checkbox" className='seats' value={"C6"}/></td>
+              <td><input type="checkbox" className='seats' value={"C7"}/></td>
+              <td><input type="checkbox" className='seats' value={"C8"}/></td>
+              <td><input type="checkbox" className='seats' value={"C9"}/></td>
+              <td><input type="checkbox" className='seats' value={"C10"}/></td>
+              <td><input type="checkbox" className='seats' value={"C11"}/></td>
+              <td><input type="checkbox" className='seats' value={"C12"}/></td>
+            </tr>
+            <tr>
+              <td>D</td>
+              <td><input type="checkbox" className='seats' value={"D1"}/></td>
+              <td><input type="checkbox" className='seats' value={"D2"}/></td>
+              <td><input type="checkbox" className='seats' value={"D3"}/></td>
+              <td><input type="checkbox" className='seats' value={"D4"}/></td>
+              <td><input type="checkbox" className='seats' value={"D5"}/></td>
+              <td><input type="checkbox" className='seats' value={"D6"}/></td>
+              <td><input type="checkbox" className='seats' value={"D7"}/></td>
+              <td><input type="checkbox" className='seats' value={"D8"}/></td>
+              <td><input type="checkbox" className='seats' value={"D9"}/></td>
+              <td><input type="checkbox" className='seats' value={"D10"}/></td>
+              <td><input type="checkbox" className='seats' value={"D11"}/></td>
+              <td><input type="checkbox" className='seats' value={"D12"}/></td>
+            </tr>
+            <tr>
+              <td>E</td>
+              <td><input type="checkbox" className='seats' value={"E1"}/></td>
+              <td><input type="checkbox" className='seats' value={"E2"}/></td>
+              <td><input type="checkbox" className='seats' value={"E3"}/></td>
+              <td><input type="checkbox" className='seats' value={"E4"}/></td>
+              <td><input type="checkbox" className='seats' value={"E5"}/></td>
+              <td><input type="checkbox" className='seats' value={"E6"}/></td>
+              <td><input type="checkbox" className='seats' value={"E7"}/></td>
+              <td><input type="checkbox" className='seats' value={"E8"}/></td>
+              <td><input type="checkbox" className='seats' value={"E9"}/></td>
+              <td><input type="checkbox" className='seats' value={"E10"}/></td>
+              <td><input type="checkbox" className='seats' value={"E11"}/></td>
+              <td><input type="checkbox" className='seats' value={"E12"}/></td>
+
+            </tr>
+            <tr>
+              <td>F</td>
+              <td><input type="checkbox" className='seats' value={"F1"}/></td>
+              <td><input type="checkbox" className='seats' value={"F2"}/></td>
+              <td><input type="checkbox" className='seats' value={"F3"}/></td>
+              <td><input type="checkbox" className='seats' value={"F4"}/></td>
+              <td><input type="checkbox" className='seats' value={"F5"}/></td>
+              <td><input type="checkbox" className='seats' value={"F6"}/></td>
+              <td><input type="checkbox" className='seats' value={"F7"}/></td>
+              <td><input type="checkbox" className='seats' value={"F8"}/></td>
+              <td><input type="checkbox" className='seats' value={"F9"}/></td>
+              <td><input type="checkbox" className='seats' value={"F10"}/></td>
+              <td><input type="checkbox" className='seats' value={"F11"}/></td>
+              <td><input type="checkbox" className='seats' value={"F12"}/></td>
+
+            </tr>
+            <tr>
+              <td>G</td>
+              <td><input type="checkbox" className='seats' value={"G1"}/></td>
+              <td><input type="checkbox" className='seats' value={"G2"}/></td>
+              <td><input type="checkbox" className='seats' value={"G3"}/></td>
+              <td><input type="checkbox" className='seats' value={"G4"}/></td>
+              <td><input type="checkbox" className='seats' value={"G5"}/></td>
+              <td><input type="checkbox" className='seats' value={"G6"}/></td>
+              <td><input type="checkbox" className='seats' value={"G7"}/></td>
+              <td><input type="checkbox" className='seats' value={"G8"}/></td>
+              <td><input type="checkbox" className='seats' value={"G9"}/></td>
+              <td><input type="checkbox" className='seats' value={"G10"}/></td>
+              <td><input type="checkbox" className='seats' value={"G11"}/></td>
+              <td><input type="checkbox" className='seats' value={"G12"}/></td>
+            </tr>
+            <tr>
+              <td>H</td>
+              <td><input type="checkbox" className='seats' value={"H1"}/></td>
+              <td><input type="checkbox" className='seats' value={"H2"}/></td>
+              <td><input type="checkbox" className='seats' value={"H3"}/></td>
+              <td><input type="checkbox" className='seats' value={"H4"}/></td>
+              <td><input type="checkbox" className='seats' value={"H5"}/></td>
+              <td><input type="checkbox" className='seats' value={"H6"}/></td>
+              <td><input type="checkbox" className='seats' value={"H7"}/></td>
+              <td><input type="checkbox" className='seats' value={"H8"}/></td>
+              <td><input type="checkbox" className='seats' value={"H9"}/></td>
+              <td><input type="checkbox" className='seats' value={"H10"}/></td>
+              <td><input type="checkbox" className='seats' value={"H11"}/></td>
+              <td><input type="checkbox" className='seats' value={"H12"}/></td>
+            </tr>
+            <tr>
+              <td>I</td>
+              <td><input type="checkbox" className='seats' value={"J1"}/></td>
+              <td><input type="checkbox" className='seats' value={"J2"}/></td>
+              <td><input type="checkbox" className='seats' value={"J3"}/></td>
+              <td><input type="checkbox" className='seats' value={"J4"}/></td>
+              <td><input type="checkbox" className='seats' value={"J5"}/></td>
+              <td><input type="checkbox" className='seats' value={"J6"}/></td>
+              <td><input type="checkbox" className='seats' value={"J7"}/></td>
+              <td><input type="checkbox" className='seats' value={"J8"}/></td>
+              <td><input type="checkbox" className='seats' value={"J9"}/></td>
+              <td><input type="checkbox" className='seats' value={"J10"}/></td>
+              <td><input type="checkbox" className='seats' value={"J11"}/></td>
+              <td><input type="checkbox" className='seats' value={"J12"}/></td>
+            </tr>
+            <tr>
+              <td>J</td>
+              <td><input type="checkbox" className='seats' value={"H1"}/></td>
+              <td><input type="checkbox" className='seats' value={"H2"}/></td>
+              <td><input type="checkbox" className='seats' value={"H3"}/></td>
+              <td><input type="checkbox" className='seats' value={"H4"}/></td>
+              <td><input type="checkbox" className='seats' value={"H5"}/></td>
+              <td><input type="checkbox" className='seats' value={"H6"}/></td>
+              <td><input type="checkbox" className='seats' value={"H7"}/></td>
+              <td><input type="checkbox" className='seats' value={"H8"}/></td>
+              <td><input type="checkbox" className='seats' value={"H9"}/></td>
+              <td><input type="checkbox" className='seats' value={"H10"}/></td>
+              <td><input type="checkbox" className='seats' value={"H11"}/></td>
+              <td><input type="checkbox" className='seats' value={"H12"}/></td>
+            </tr>
+
+            <button className="btn btn-light confirm">
+          Confirm Selection
+        </button>
+
+        .smallBox{
+    list-style-type: none;
+    color: white;
+}
+.smallBox::before{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.greenBox::before{
+    content: "";
+    background-color: green;
+}
+.redBox::before{
+    content: "";
+    background-color: red;
+}
+.whiteBox::before{
+    content: "";
+    background-color: white;
+}
+.tableResult td{
+    padding: 7px 10px;
+    color: black;
+    font-weight: 600;
+}
+.tableResult textarea{
+    border: none;
+    background-color: transparent;
+    /* Ẩn đi thanh kéo của text area */
+    resize: none; 
+}
