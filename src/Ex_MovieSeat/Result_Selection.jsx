@@ -30,7 +30,7 @@ class Result_Selection extends Component {
           <tbody>
             {listChairs.map((soGhe, index) => 
               <tr key={index} style={{fontSize: "20px"}}>
-                <td>{index}</td>
+                <td>{index+1}</td>
                 <td>{soGhe.soGhe}</td>
                 <td>{soGhe.gia}</td>
                 <td><i className="fa fa-times text-danger" onClick={()=>{handleRemoveChair(soGhe)}} style={{cursor: "pointer"}}></i></td>
