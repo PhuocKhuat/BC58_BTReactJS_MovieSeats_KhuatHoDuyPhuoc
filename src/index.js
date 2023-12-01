@@ -7,6 +7,7 @@ import { createStore } from 'redux';
 import { movieReducer } from './Ex_MovieSeat/redux/reducer';
 import { Provider } from 'react-redux';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let store = createStore(movieReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 root.render(
