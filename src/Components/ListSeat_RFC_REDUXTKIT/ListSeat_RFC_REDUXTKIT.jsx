@@ -17,7 +17,7 @@ export default function ListSeat_RFC_REDUXTKIT() {
       <div>
         {seatList.map((hangGhe, index) => (
           <div key={index}>
-            <Seat_RFC_REDUXTKIT hangGhe={hangGhe} soHangGhe={index} />
+            <Seat_RFC_REDUXTKIT hangGhe={hangGhe} viTriHangGhe={index} />
           </div>
         ))}
       </div>

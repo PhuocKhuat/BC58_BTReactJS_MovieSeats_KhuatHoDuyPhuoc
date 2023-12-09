@@ -7,7 +7,8 @@
     width: 100%;
     height: 100%;
     background-size: cover;
-    position: fixed;
+    background-position: center;
+    position: relative;
     font-family: fontGame;
 }
 
@@ -17,7 +18,7 @@
     background: rgba(0, 0, 0, 0.8);
     width: 100%;
     height: 100%;
-    position: fixed;
+    position: relative;
     /* width: 700px;
     margin: 0 320px; */
     /* box-sizing: border-box; */

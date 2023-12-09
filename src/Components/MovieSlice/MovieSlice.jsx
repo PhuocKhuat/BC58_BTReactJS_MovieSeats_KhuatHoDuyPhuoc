@@ -191,11 +191,18 @@ let movieSlice = createSlice({
     name: "movieSlice",
     initialState,
     reducers: {
-        setSeat: (state, action) => {
-            state.seatArr = action.payload;
+        setGheDangDat: (state, action) => {
+          let cloneGhe = [...state.danhSachGheDangDat];
+          let index = cloneGhe.findIndex(gheDangDat => gheDangDat.soGhe === action.payload.soGhe);
+          if(index === -1){
+            cloneGhe.push(action.payload)
+          } else{
+            cloneGhe.splice(index, 1);
+          }
+          state.danhSachGheDangDat = cloneGhe;
         }
     } 
 })
 
 export default movieSlice.reducer;
-export let {setSeat} = movieSlice.actions;
+export let {setGheDangDat} = movieSlice.actions;
