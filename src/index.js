@@ -3,16 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { createStore } from 'redux';
-import { movieReducer } from './Ex_MovieSeat/redux/reducer';
+// import { createStore } from 'redux';
+// import { movieReducer } from './Ex_MovieSeat/redux/reducer';
 import { Provider } from 'react-redux';
+import { configureStore } from '@reduxjs/toolkit';
+import MovieSlice from './Components/MovieSlice/MovieSlice';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-let store = createStore(movieReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+let store = configureStore({
+  reducer: {
+    MovieSlice: MovieSlice,
+  }
+})
+// let store = createStore(movieReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 root.render(
-  // <React.StrictMode>
-  // </React.StrictMode>
   <Provider store={store}>
     <App />
   </Provider>
