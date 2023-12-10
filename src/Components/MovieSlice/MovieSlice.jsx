@@ -57,14 +57,14 @@ let initialState = {
   {
     "hang": "C", 
     "danhSachGhe": [
-      {"soGhe":"C1","gia":75000,"daDat":false},
-      {"soGhe":"C2","gia":75000,"daDat":false},
+      {"soGhe":"C1","gia":75000,"daDat":true},
+      {"soGhe":"C2","gia":75000,"daDat":true},
       {"soGhe":"C3","gia":75000,"daDat":false},
       {"soGhe":"C4","gia":75000,"daDat":false},
-      {"soGhe":"C5","gia":75000,"daDat":false},
-      {"soGhe":"C6","gia":75000,"daDat":false},
-      {"soGhe":"C7","gia":75000,"daDat":false},
-      {"soGhe":"C8","gia":75000,"daDat":false},
+      {"soGhe":"C5","gia":75000,"daDat":true},
+      {"soGhe":"C6","gia":75000,"daDat":true},
+      {"soGhe":"C7","gia":75000,"daDat":true},
+      {"soGhe":"C8","gia":75000,"daDat":true},
       {"soGhe":"C9","gia":75000,"daDat":false},
       {"soGhe":"C10","gia":75000,"daDat":false},
       {"soGhe":"C11","gia":75000,"daDat":false},
@@ -84,7 +84,7 @@ let initialState = {
       {"soGhe":"D9","gia":75000,"daDat":false},
       {"soGhe":"D10","gia":75000,"daDat":false},
       {"soGhe":"D11","gia":75000,"daDat":false},
-      {"soGhe":"D12","gia":75000,"daDat":false}
+      {"soGhe":"D12","gia":75000,"daDat":true}
     ] 
   },{
     "hang": "E", 
@@ -94,7 +94,7 @@ let initialState = {
       {"soGhe":"E3","gia":75000,"daDat":false},
       {"soGhe":"E4","gia":75000,"daDat":false},
       {"soGhe":"E5","gia":75000,"daDat":false},
-      {"soGhe":"E6","gia":75000,"daDat":false},
+      {"soGhe":"E6","gia":75000,"daDat":true},
       {"soGhe":"E7","gia":75000,"daDat":false},
       {"soGhe":"E8","gia":75000,"daDat":false},
       {"soGhe":"E9","gia":75000,"daDat":false},
@@ -110,7 +110,7 @@ let initialState = {
       {"soGhe":"F3","gia":75000,"daDat":false},
       {"soGhe":"F4","gia":75000,"daDat":false},
       {"soGhe":"F5","gia":75000,"daDat":false},
-      {"soGhe":"F6","gia":75000,"daDat":false},
+      {"soGhe":"F6","gia":75000,"daDat":true},
       {"soGhe":"F7","gia":75000,"daDat":false},
       {"soGhe":"F8","gia":75000,"daDat":false},
       {"soGhe":"F9","gia":75000,"daDat":false},
@@ -121,14 +121,14 @@ let initialState = {
   },{
     "hang": "G", 
     "danhSachGhe": [
-      {"soGhe":"G1","gia":75000,"daDat":false},
+      {"soGhe":"G1","gia":75000,"daDat":true},
       {"soGhe":"G2","gia":75000,"daDat":false},
       {"soGhe":"G3","gia":75000,"daDat":false},
       {"soGhe":"G4","gia":75000,"daDat":false},
       {"soGhe":"G5","gia":75000,"daDat":false},
       {"soGhe":"G6","gia":75000,"daDat":false},
-      {"soGhe":"G7","gia":75000,"daDat":false},
-      {"soGhe":"G8","gia":75000,"daDat":false},
+      {"soGhe":"G7","gia":75000,"daDat":true},
+      {"soGhe":"G8","gia":75000,"daDat":true},
       {"soGhe":"G9","gia":75000,"daDat":false},
       {"soGhe":"G10","gia":75000,"daDat":false},
       {"soGhe":"G11","gia":75000,"daDat":false},
@@ -141,7 +141,7 @@ let initialState = {
       {"soGhe":"H2","gia":75000,"daDat":false},
       {"soGhe":"H3","gia":75000,"daDat":false},
       {"soGhe":"H4","gia":75000,"daDat":false},
-      {"soGhe":"H5","gia":75000,"daDat":false},
+      {"soGhe":"H5","gia":75000,"daDat":true},
       {"soGhe":"H6","gia":75000,"daDat":false},
       {"soGhe":"H7","gia":75000,"daDat":false},
       {"soGhe":"H8","gia":75000,"daDat":false},
@@ -170,14 +170,14 @@ let initialState = {
     "hang": "J", 
     "danhSachGhe": [
       {"soGhe":"J1","gia":75000,"daDat":false},
-      {"soGhe":"J2","gia":75000,"daDat":false},
+      {"soGhe":"J2","gia":75000,"daDat":true},
       {"soGhe":"J3","gia":75000,"daDat":false},
       {"soGhe":"J4","gia":75000,"daDat":false},
       {"soGhe":"J5","gia":75000,"daDat":false},
       {"soGhe":"J6","gia":75000,"daDat":false},
       {"soGhe":"J7","gia":75000,"daDat":false},
       {"soGhe":"J8","gia":75000,"daDat":false},
-      {"soGhe":"J9","gia":75000,"daDat":false},
+      {"soGhe":"J9","gia":75000,"daDat":true},
       {"soGhe":"J10","gia":75000,"daDat":false},
       {"soGhe":"J11","gia":75000,"daDat":false},
       {"soGhe":"J12","gia":75000,"daDat":false}
@@ -200,9 +200,14 @@ let movieSlice = createSlice({
             cloneGhe.splice(index, 1);
           }
           state.danhSachGheDangDat = cloneGhe;
+        },
+        setDelete: (state, action) =>{
+          let cloneGhe = [...state.danhSachGheDangDat];
+          let gheFilter = cloneGhe.filter(ghe => ghe.soGhe !== action.payload.soGhe);
+          state.danhSachGheDangDat =gheFilter;
         }
     } 
 })
 
 export default movieSlice.reducer;
-export let {setGheDangDat} = movieSlice.actions;
+export let {setGheDangDat, setDelete} = movieSlice.actions;

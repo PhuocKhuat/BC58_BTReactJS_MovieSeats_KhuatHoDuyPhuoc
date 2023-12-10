@@ -9,7 +9,6 @@ import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 import MovieSlice from './Components/MovieSlice/MovieSlice';
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let store = configureStore({
   reducer: {

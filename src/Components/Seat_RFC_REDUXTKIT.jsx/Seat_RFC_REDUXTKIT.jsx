@@ -4,17 +4,18 @@ import { setGheDangDat } from "../MovieSlice/MovieSlice";
 
 export default function Seat_RFC_REDUXTKIT({ hangGhe, viTriHangGhe }) {
   let gheDangDat = useSelector((state) => state.MovieSlice.danhSachGheDangDat);
-  let dispatch = useDispatch();
   // console.log(gheDangDat);
   // console.log(viTriHangGhe);
+  let dispatch = useDispatch();
   let renderGhe = () => {
-   return hangGhe.danhSachGhe.map((soGhe, index) => {
+    //Nhớ return.
+   return hangGhe.danhSachGhe.map((ghe, index) => {
     // console.log(soGhe);
       //GHẾ ĐÃ ĐẶT.
       let cssGheDaDat = "";
       //disabled là không được chọn mà là false, nghĩa là được chọn.
       let disabled = false;
-      if (soGhe.daDat) {
+      if (ghe.daDat) {
         //Gán css kiểu mới.
         cssGheDaDat = "gheDuocChon";
         //Không được chọn mà đúng là được chọn.
@@ -24,7 +25,7 @@ export default function Seat_RFC_REDUXTKIT({ hangGhe, viTriHangGhe }) {
       let cssGheDangDat = "";
       //Tìm vị trí khi ấn để ô ghế hiện ở table.
       let indexGheDangChon = gheDangDat.findIndex(
-        (gheDangChon) => gheDangChon.soGhe === soGhe.soGhe
+        (gheDangChon) => gheDangChon.soGhe === ghe.soGhe
       );
       if (indexGheDangChon !== -1) {
         cssGheDangDat = "gheDangChon";
@@ -34,17 +35,17 @@ export default function Seat_RFC_REDUXTKIT({ hangGhe, viTriHangGhe }) {
           key={index}
           className={`vienGhe ${cssGheDaDat}${cssGheDangDat}`}
           disabled={disabled}
-          onClick={()=>{dispatch(setGheDangDat(soGhe))}}
+          onClick={()=>{dispatch(setGheDangDat(ghe))}}
         >
-          {soGhe.soGhe}
+          {ghe.soGhe}
         </button>
       );
     });
   };
   let renderHangDauTien = () =>
-    hangGhe.danhSachGhe.map((soGhe, index) =>
+    hangGhe.danhSachGhe.map((ghe, index) =>
       <span className="rowNumber" key={index}>
-        {soGhe.soGhe}
+        {ghe.soGhe}
       </span>
     )
   let renderHangGhe = () =>{
