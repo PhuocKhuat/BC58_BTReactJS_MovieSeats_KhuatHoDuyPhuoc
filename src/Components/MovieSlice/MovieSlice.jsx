@@ -204,7 +204,7 @@ let movieSlice = createSlice({
         setDelete: (state, action) =>{
           let cloneGhe = [...state.danhSachGheDangDat];
           let gheFilter = cloneGhe.filter(ghe => ghe.soGhe !== action.payload.soGhe);
-          state.danhSachGheDangDat =gheFilter;
+          state.danhSachGheDangDat = gheFilter;
         }
     } 
 })

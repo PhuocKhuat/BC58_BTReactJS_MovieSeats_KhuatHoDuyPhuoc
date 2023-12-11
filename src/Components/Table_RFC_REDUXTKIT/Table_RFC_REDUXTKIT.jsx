@@ -8,20 +8,27 @@ export default function Table_RFC_REDUXTKIT() {
   let dispatch = useDispatch();
   let renderTable = () =>
     tableList.map((ghe, index) => (
-      <tr key={index} style={{fontSize: "20px"}}>
+      <tr key={index} style={{ fontSize: "20px" }}>
         <td>{index + 1}</td>
         <td>{ghe.soGhe}</td>
         <td>{ghe.gia}</td>
         <td>
-          <i className="fa fa-times text-danger" style={{cursor: "pointer"}} onClick={()=>{
-            dispatch(setDelete(ghe))
-          }}></i>
+          <i
+            className="fa fa-times text-danger"
+            style={{ cursor: "pointer" }}
+            onClick={() => {
+              dispatch(setDelete(ghe));
+            }}
+          ></i>
         </td>
       </tr>
     ));
   return (
     <div className="col-4">
-      <h4 className="text-success mb-4 fs-3" style={{ width: "120%", marginLeft: "45px" }}>
+      <h4
+        className="text-success mb-4 fs-3"
+        style={{ width: "120%", marginLeft: "45px" }}
+      >
         LIST OF SEATS YOU HAVE SELECTED
       </h4>
       <div className="list-seat">
@@ -32,9 +39,13 @@ export default function Table_RFC_REDUXTKIT() {
         <button className="gheTrong"></button>
         <span className="text-light">Empty Seat</span>
       </div>
-      <table className="bg-white mt-4 table" border="2" style={{width: "145%"}}>
+      <table
+        className="bg-white mt-4 table"
+        border="2"
+        style={{ width: "145%" }}
+      >
         <thead>
-          <tr style={{fontSize: "25px"}}>
+          <tr style={{ fontSize: "25px" }}>
             <th className="text-warning">Index</th>
             <th className="text-primary">Number of Seats</th>
             <th className="text-success">Price</th>
@@ -42,6 +53,16 @@ export default function Table_RFC_REDUXTKIT() {
           </tr>
         </thead>
         <tbody>{renderTable()}</tbody>
+        <tfoot>
+          <tr>
+            <td style={{fontSize: "20px", position: "relative", left: "170px"}} className="text-secondary">
+            Total Price:
+            </td>
+            <td style={{fontSize: "20px", position: "relative", left: "160px"}} className="text-secondary">
+               {tableList.reduce((tongTien, ghe, index) => tongTien + ghe.gia, 0)}
+            </td>
+          </tr>
+        </tfoot>
       </table>
     </div>
   );
